@@ -9,6 +9,7 @@ import PostIndividual, {
   loader as getEachPost,
 } from "./features/posts/PostIndividual";
 import User from "./pages/User";
+import AddPlace, { action as createNewPlace } from "./pages/AddPlace";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -40,6 +41,11 @@ const App = () => {
         {
           path: "/user",
           element: <User />,
+        },
+        {
+          path: "/add-place",
+          element: <AddPlace />,
+          action: createNewPlace,
         },
       ],
     },

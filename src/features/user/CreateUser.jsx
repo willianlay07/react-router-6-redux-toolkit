@@ -18,7 +18,7 @@ const CreateUser = () => {
 
   return (
     <form onSubmit={handleForm}>
-      <Input type="text" user={user} setUser={setUser} />
+      <Input type="text" user={user} setUser={setUser} name="" />
     </form>
   );
 };

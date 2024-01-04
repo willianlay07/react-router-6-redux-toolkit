@@ -8,11 +8,12 @@ const InputStyled = styled.input`
   outline: none;
 `;
 
-const Input = ({ type, user, setUser }) => {
+const Input = ({ type, user, setUser, name }) => {
   return (
     <InputStyled
       type={type}
       value={user}
+      name={name}
       onChange={(e) => setUser(e.target.value)}
     />
   );

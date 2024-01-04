@@ -26,6 +26,9 @@ const Nav = () => {
       <li>
         <NavLink to="/user">User</NavLink>
       </li>
+      <li>
+        <NavLink to="/add-place">Add Place</NavLink>
+      </li>
     </ul>
   );
 };
